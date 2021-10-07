@@ -6,14 +6,13 @@ int yellPin = 12;
 int greenPin = 13;
 int buttonApin = 9;
 int speaker=10;
-unsigned char i;
+
 
 void setup() {
   pinMode(redPin, OUTPUT);
   pinMode(buttonApin, INPUT_PULLUP);  
   pinMode(yellPin,OUTPUT);
   pinMode(greenPin,OUTPUT);
-  
   pinMode(speaker,OUTPUT);
 }
 
