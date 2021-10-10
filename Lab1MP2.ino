@@ -8,7 +8,7 @@ int buttonApin = 9;
 int speaker=10;
 
 
-void setup() {
+void setup() { 
   pinMode(redPin, OUTPUT);
   pinMode(buttonApin, INPUT_PULLUP);  
   pinMode(yellPin,OUTPUT);
@@ -38,7 +38,7 @@ if (digitalRead(buttonApin) == HIGH){ //checks if button isnt pressed if not red
    if (digitalRead(buttonApin) == LOW) //checks if button pressed if it is it runs the loop
   {
 
-    delay(500);
+    delay(500); //debounce delay
        
     while(digitalRead(buttonApin)==HIGH){
     digitalWrite(redPin, HIGH);//Turns the red light for 20 seconds 
